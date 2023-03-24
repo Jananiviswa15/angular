@@ -1,4 +1,16 @@
 <div>
 <h1> {{header}}</h1>
-<app-student></app-student>
+<h2> welcome {{userName}}</h2>
+<!--
+<input [(ngModel)] = "userName" type = text/>
+{{userName}}
+
+<button (dblclick)="sayHi($event)"> Say hi</button>
+<app-student></app-student> -->
+<!-- use with input only 
+<app-item-detail-component [item] = "currentItem"></app-item-detail-component>-->
+<app-item-output-component  (newItemEvent)="addItemFromChild($event)"></app-item-output-component>
+<ul>
+    <li *ngFor="let item of items"> {{item}}</li>
+</ul>
 </div>

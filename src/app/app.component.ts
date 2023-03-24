@@ -18,10 +18,20 @@ import { Component } from '@angular/core';
   styles: []
 })*/
 export class AppComponent {
- public userName = "janani";
+ public userName = "";
+ public currentItem = 'Television';
 public header = "student Details";
- sayHi(){
 
-  return "good morning" + this.userName;
+items = ['Television', 'fridge'];
+
+
+addItemFromChild(newItem : string){
+  this.items.push(newItem);
+}
+
+
+ sayHi(event : any){
+console.log(event)
+  console.log( "good morning" + this.userName);
  }
 }
