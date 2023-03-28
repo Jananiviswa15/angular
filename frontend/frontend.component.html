@@ -1,0 +1,24 @@
+<p>frontend works!</p>
+<form [formGroup] = "reactiveForm" (ngSubmit)="onSubmit()" novalidate>
+    <p>
+        <label for = "firstname">ENter first name </label>
+        <input type = "text" id = "firstname" name = "username"
+        formControlName = "firstName">
+    </p>
+
+    <p>
+        <label for = "lastname">ENter last name </label>
+        <input type = "text" id = "lastname" name = "lastname"
+        formControlName = "lastName">
+    </p>
+
+    <p>
+        <label for = "email">ENter email name </label>
+        <input type = "text" id = "email" name = "email"
+        formControlName = "email">
+    </p>
+
+    <p>
+        <button type = "submit"> submit</button>
+    </p>
+</form>
